@@ -1,0 +1,173 @@
+@font-face {
+font-family: 'Titr';
+src: url('/q3/assets/fonts/titr.woff') format('woff');
+font-weight: bold;
+}
+
+@keyframes head1{
+          0%{
+          right:900px;
+          transform-origin:right center;
+          }
+          5% {
+          right:100px;
+          transform:scaleX(0.7);
+          }
+          3%{
+          transform:scaleX(1);
+          }
+          7%{
+          transform:scaleX(1);
+          }
+          45%{
+          right:100px;
+          }
+          50%,100%{
+          right:900px;
+          }
+}
+@keyframes head2{
+          0%,42%{
+          right:-300px;
+          }
+          47%,95%{
+          right:100px;
+          }
+          100%{
+          right:-300px;
+          }
+}
+@keyframes snowman{
+          0%{
+          top:-400px;
+          }
+          3%,44%{
+          top:-700px;
+          }
+          50%,97%{
+          top:0;
+          }
+          100%{
+          top:-400px;
+          }
+}
+@keyframes snow{
+          0%{
+          top:-300px;
+          }
+          100%{
+          top:0;
+          }
+}
+@keyframes text1{
+          0%{
+          right:900px;
+          }
+          5%,45%{
+          right:160px;
+          }
+          50%,100%{
+          right:900px;
+          }
+}
+@keyframes text2{
+          0%{
+          right:-200px;
+          }
+          5%,45%{
+          right:200px;
+          }
+          50%,100%{
+          right:-200px;
+          }
+}
+@keyframes text3{
+          0%,42%{
+          right:-400px;
+          }
+          47%,95%{
+          right:100px;
+          }
+          100%{
+          right:-400px;
+          }
+}
+@keyframes text4{
+          0%,42%{
+                    right:900px;
+          }
+          47%,95%{
+                    right:200px;
+          }
+          100%{
+                    right:900px;
+          }
+}
+#banner{
+          width:900px;
+          height:300px;
+          background-image:url('/q3/assets/images/back.jpg');
+          margin:20px auto;
+          border-radius:20px;
+          position:relative;
+          direction:rtl;
+          overflow:hidden;
+}
+#banner *{
+          position:absolute;
+          margin:0;
+          padding:0;
+          font-family:Titr;
+          font-size:40px;
+}
+#snowman{
+          top:-400px;
+          right:485px;
+          animation:snowman 10s 0.2s infinite;
+}
+#head1{
+          color:#47b;
+          top:30px;
+          right:900px;
+          width:400px;
+          animation:head1 10s infinite;
+}
+#head2{
+          color:#47b;
+          top:30px;
+          right:-300px;
+          width:240px;
+          animation:head2 10s 0.4s infinite;
+}
+#text1{
+          color:#e55;
+          top:130px;
+          right:900px;
+          animation:text1 10s infinite;
+}
+#text2{
+          color:#e55;
+          top:180px;
+          right:-200px;
+          animation:text2 10s infinite;
+}
+#text3{
+          color:#e55;
+          top:130px;
+          right:-400px;
+          width:400px;
+          animation:text3 10s 0.4s infinite;
+}
+#text4{
+          color:#e55;
+          top:180px;
+          right:900px;
+          width:200px;
+          animation:text4 10s 0.4s infinite;
+}
+#snow1{
+          animation:snow 5s linear infinite;
+}
+#snow2{
+          animation:snow 2s linear infinite;
+}
